@@ -2,66 +2,91 @@
 
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Crystal Collector</title>
 
-<!--link to css stylesheet-->
-	<link rel="stylesheet" href="assets/css/style.css">
 
-<!--link to bootstrap-->
+	<!--link to bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	  crossorigin="anonymous">
 
-		
-	<!--link to javascript-->	
-	<script src="assets/javascript/game.js"></script>
-	<!--Jquery link-->	
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<!--link to css stylesheet-->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+
+
+
 	<!--google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
-	</head>
-	
+
+</head>
+
 <body>
+
+
+	<div class="jumbotron jumbotron-fluid">
+
+		<h1 class="display-4">Mystery Number Game!</h1>
+
+		<hr>
+		<p class="lead">From the hit studio that brought you Nothing! Comes a game you didn't ask for! </p>
+
+	</div>
+
 	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<div>
 
-		<h1>
-			<strong>Crystal Collector Game!</strong>
-		</h1>
-		<div>
-
-			<p> At the start of the game you will be given a random number. </p>
+					<p> At the start of the game you will be given a random number. </p>
 
 
-			<p>Below you will find a set of precious stones that have a hidden value attributed to them</p>
+					<p>Below you will find a set of images I found using one of the many toolbars I can't uninstall from my browser. Each image has a random number associated with it.</p>
 
-			<p>To win this game, you must match the your score to the random number assigned. You will lose if your score goes above
-				the the random number.</p>
+					<p>To win this game, you must match the your score to the random number assigned. You will lose if your score goes above
+						the the random number.</p>
 
-			<p>Each time the game starts the game will change the value of each precious stone.</p>
+					<p> Be warned! Each time the game starts, the game will change the value attributed to these pictures.</p>
+
+				</div>
+			</div>
 
 		</div>
+		<div class="col-sm">
+
+			<div class="panel panel-default">
+
+				<div class="panel-body">
+
+					<div id="randomNumber">
+						<h2>Random Number: </h2>
+					</div>
+					<hr>
+
+					<h2></h2>
+					<div id="scoreboard">
+						<h2>Wins:</h2>
+						<hr>
+						<h2>Losses:</h2>
+						<hr>
 
 
-		<div id="randomNumber">
-			<h2>Random Number: </h2>
-		</div>
-
-		<h2></h2>
-		<div id="scoreboard">
-			<h2>Wins:</h2>
-			<h2>Losses:</h2>
-
-
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
+	<div class="col-sm">
 
-	<div class="vertical-align">
+		<div class="vertical-align">
 
-		<div class="panel-body">
-			<img class="rock1" id="rock1" src="assets/images/rock1.jpg">
-			<img class="rock2" id="rock2" src="assets/images/rock2.jpg">
-			<img class="rock3" id="rock3" src="assets/images/rock3.jpg">
-			<img class="rock4" id="rock4" src="assets/images/rock4.jpg">
+			<div class="panel-body">
+				<img class="rock1" id="rock1" src="assets/images/rock1.jpg">
+				<img class="rock2" id="rock2" src="assets/images/rock2.jpg">
+				<img class="rock3" id="rock3" src="assets/images/rock3.jpg">
+				<img class="rock4" id="rock4" src="assets/images/rock4.jpg">
+			</div>
 		</div>
 	</div>
 
@@ -79,7 +104,15 @@
 	<div class="footer">
 
 		<footer>Alex Larsen</footer>
+
 	</div>
+
+	<!--link to javascript-->
+	<script src="assets/javascript/game.js"></script>
+
+
+	<!--Jquery link-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </body>
 
 </html>
