@@ -4,27 +4,20 @@ $(document).ready(function () {
 	var wins = 0;
 	var losses = 0;
 
-	//update html scoreboard
-	$('#Wins').text(wins);
-	$('#Losses').text(losses);
+	//selects random number to be shown at game start
+	var Random=Math.floor(Math.random()*101+19)
 
-	newNumbers();
-	newGame();
 
-	function newNumbers() {
-		var numbers = []
-		while (numbers.length < 4) {
-			var randomNumber = Math.ceil(Math.random() * 15)
-			var found = false;
-			for (var i = 0; i < numbers.length; i++) {
-				if (numbers[i] == randomNumber) {
-					found = true;
-					break
-					console.log(randomNumber);
-				}
-			}
-		}
-	}
+	//update html elements
+	$('#randomNumber').text(Random);
+	$('#wins').text(wins);
+	$('#losses').text(losses);
+	$('#counter').text(counter);
+
+	//setting up the random numbers assocaited with each picture.
+	var num1= Math.floor(math.Random()*11+1)
+
+
 
 
 });

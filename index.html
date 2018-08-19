@@ -19,6 +19,10 @@
 	<!--google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
 
+
+	<!--Jquery link-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -29,7 +33,7 @@
 		<h1 class="display-4">Mystery Number Game!</h1>
 
 		<hr>
-		<p class="lead">From the hit studio that brought you Nothing! Comes a game you didn't ask for! </p>
+		<p class="lead">From the hit studio that brought you absolutely nothing! Comes a game nobody asked for! </p>
 
 	</div>
 
@@ -58,16 +62,26 @@
 
 				<div class="panel-body">
 
-					<div id="randomNumber">
-						<h2>Random Number: </h2>
+					<div id="numbertoget">
+						<h2>Match this number:
+							<span id="randomNumber"></span>
+						</h2>
 					</div>
 					<hr>
 
-					<h2></h2>
+
 					<div id="scoreboard">
-						<h2>Wins:</h2>
+						<h2>Counter:
+							<span id="counter"></span>
+						</h2>
 						<hr>
-						<h2>Losses:</h2>
+						<h2>Wins:
+							<span id="wins"></span>
+						</h2>
+						<hr>
+						<h2>Losses:
+							<span id="losses"></span>
+						</h2>
 						<hr>
 
 
@@ -107,12 +121,10 @@
 
 	</div>
 
+
 	<!--link to javascript-->
 	<script src="assets/javascript/game.js"></script>
 
-
-	<!--Jquery link-->
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </body>
 
 </html>
