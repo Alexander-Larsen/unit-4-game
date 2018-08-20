@@ -20,8 +20,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
 
 
-	<!--Jquery link-->
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -61,18 +59,18 @@
 			<div class="panel panel-default">
 
 				<div class="panel-body">
-
-					<div id="numbertoget">
+<!--your goal-->
+					<div>
 						<h2>Match this number:
-							<span id="randomNumber"></span>
+							<span id="targetscore"></span>
 						</h2>
 					</div>
 					<hr>
 
-
-					<div id="scoreboard">
-						<h2>Counter:
-							<span id="counter"></span>
+<!--your scores-->
+					<div>
+						<h2>Current tally:
+							<span id="currentscore"></span>
 						</h2>
 						<hr>
 						<h2>Wins:
@@ -90,16 +88,16 @@
 			</div>
 		</div>
 	</div>
-
+<!--clickable picture-->
 	<div class="col-sm">
 
 		<div class="vertical-align">
 
 			<div class="panel-body">
-				<img class="rock1" id="rock1" src="assets/images/rock1.jpg">
-				<img class="rock2" id="rock2" src="assets/images/rock2.jpg">
-				<img class="rock3" id="rock3" src="assets/images/rock3.jpg">
-				<img class="rock4" id="rock4" src="assets/images/rock4.jpg">
+				<img class="rockpic" src="assets/images/rock1.jpg" id="rock1">
+				<img class="rockpic" src="assets/images/rock2.jpg" id="rock2">
+				<img class="rockpic" src="assets/images/rock3.jpg" id="rock3">
+				<img class="rockpic" src="assets/images/rock4.jpg" id="rock4">
 			</div>
 		</div>
 	</div>
@@ -122,8 +120,12 @@
 	</div>
 
 
+<!--jquery link-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
 	<!--link to javascript-->
 	<script src="assets/javascript/game.js"></script>
+
 
 </body>
 
